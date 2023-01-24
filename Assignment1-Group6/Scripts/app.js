@@ -24,11 +24,11 @@ function DisplayPage(){
     MainContent.appendChild(MainParagraph);
 
 
-    let Article = document.createElement("article");
-    let ArticleParagraph = `<p id="ArticleParagraph" class="mt-3">This is my article paragraph</p>`;
-    Article.setAttribute("class", "container");
-    Article.innerHTML = ArticleParagraph;
-    document.body.appendChild(Article);
+    //let Article = document.createElement("article");
+    //let ArticleParagraph = `<p id="ArticleParagraph" class="mt-3">This is my article paragraph</p>`;
+    //Article.setAttribute("class", "container");
+    //Article.innerHTML = ArticleParagraph;
+    //document.body.appendChild(Article);
 
     let ContactUsBtn = document.getElementById("ContactUsBtn");
     let ServicesBtn = document.getElementById("ServicesBtn");
