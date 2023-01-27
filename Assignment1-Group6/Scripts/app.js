@@ -38,7 +38,7 @@ function DisplayPage(){
         location.href = "about.html";
     });
     ProductsBtn.addEventListener("click", function(){
-        location.href = "products.html";
+        location.href = "projects.html";
     });
     ServicesBtn.addEventListener("click", function(){
         location.href = "services.html";
@@ -46,4 +46,22 @@ function DisplayPage(){
     ContactUsBtn.addEventListener("click", function(){
         location.href = "contact.html";
     });
+<<<<<<< Updated upstream
+=======
+}
+
+function IndexPage (){
+    let mainContent = document.getElementsByTagName("main")[0];
+    let indexWelcomeMsg = document.createElement("h1");
+    let indexWelcomeText = "Welcome to Assignment 1 - Group 6!";
+    indexWelcomeMsg.textContent = indexWelcomeText;
+    mainContent.prepend(indexWelcomeMsg);
+
+    let bodyText = "This is the home page for Grayson & Conner Inc. Here you can navigate to our Projects, Services, " +
+        "About Us, and Contact Us pages. More work coming soon...";
+    document.getElementById("bodyTxt").innerText = bodyText;
+
+
+
+>>>>>>> Stashed changes
 }
