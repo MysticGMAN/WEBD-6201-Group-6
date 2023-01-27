@@ -71,7 +71,17 @@ function SiteWide (){
     hrTag.setAttribute("id", "humanResources");
     hrTag.setAttribute("class", "nav-item");
     ulHeader.getElementsByTagName("li")[3].insertAdjacentElement("afterend", hrTag);
-    
-    let hrGuts = "<a class=\"nav-link\" href=\"hr.html\"><i class=\"fa-solid fa-circle-user\"></i> Human Resources</a>";
+
+    let hrGuts = "<a class=\"nav-link\" href=\"hr.html\"><i class=\"fa-solid fa-people-group\"></i> Human Resources</a>";
     hrTag.innerHTML = hrGuts;
+
+    let footer = document.getElementsByTagName("main")[0];
+    let footerGuts = "<footer class=\"footer mt-auto bg-dark fixed-bottom\">\n" +
+        "  <div class=\"container justify-content-end\">\n" +
+        "    <span id=\"footer\" class=\"text-muted\">© 2023 CG, Inc. All rights reserved.</span>\n" +
+        "  </div>\n" +
+        "</footer>";
+    footer.insertAdjacentHTML("afterend", footerGuts);
+    let currentDate = new Date().toLocaleDateString();
+    document.getElementById("footer")[0].innerText(currentDate);
 }
