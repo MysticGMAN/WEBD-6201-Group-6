@@ -51,7 +51,13 @@ function DisplayPage(){
 }
 
 function IndexPage (){
-    let indexWelcomeMsg = "Welcome to Assignment 1 - Group 6!";
+    let mainContent = document.getElementsByTagName("main")[0];
+    let indexWelcomeMsg = document.createElement("h1");
+    let indexWelcomeText = "Welcome to Assignment 1 - Group 6!";
+    indexWelcomeMsg.textContent = indexWelcomeText;
+    mainContent.appendChild(indexWelcomeMsg);
 
-    document.getElementById("welcomeTxt").innerHTML = indexWelcomeMsg;
+
+
+
 }
