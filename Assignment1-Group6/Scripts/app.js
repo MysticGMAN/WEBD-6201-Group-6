@@ -24,22 +24,6 @@ and about us page, a services page, and a Contact
 //Function that listens for the click of the About Us button on the index.html page
 function DisplayPage(){
 
-    // let MainContent = document.getElementsByTagName("main")[0];
-    // let MainParagraph = document.createElement("p");
-    // let FirstString = "This is";
-    // let SecondString = `${FirstString} the first javascript variable`;
-    // MainParagraph.setAttribute("id", "MainParagraph");
-    // MainParagraph.setAttribute("class", "mt-3");
-    // MainParagraph.textContent = SecondString;
-    // MainContent.appendChild(MainParagraph);
-
-
-    //let Article = document.createElement("article");
-    //let ArticleParagraph = `<p id="ArticleParagraph" class="mt-3">This is my article paragraph</p>`;
-    //Article.setAttribute("class", "container");
-    //Article.innerHTML = ArticleParagraph;
-    //document.body.appendChild(Article);
-
     let ContactUsBtn = document.getElementById("ContactUsBtn");
     let ServicesBtn = document.getElementById("ServicesBtn");
     let ProductsBtn = document.getElementById("ProductsBtn");
@@ -69,4 +53,25 @@ function IndexPage (){
     let bodyText = "This is the home page for Grayson & Conner Inc. Here you can navigate to our Projects, Services, " +
         "About Us, and Contact Us pages. More work coming soon...";
     document.getElementById("bodyTxt").innerText = bodyText;
+}
+
+function ProjectPage(){
+
+}
+
+function SiteWide (){
+    console.log("i am here in sitewide");
+    let background = document.getElementsByTagName("body")[0];
+    background.setAttribute("id", "body");
+    background.setAttribute("class", "background");
+
+
+    let ulHeader = document.getElementsByTagName("ul")[0];
+    let hrTag = document.createElement("li");
+    hrTag.setAttribute("id", "humanResources");
+    hrTag.setAttribute("class", "nav-item");
+    ulHeader.getElementsByTagName("li")[3].insertAdjacentElement("afterend", hrTag);
+    
+    let hrGuts = "<a class=\"nav-link\" href=\"hr.html\"><i class=\"fa-solid fa-circle-user\"></i> Human Resources</a>";
+    hrTag.innerHTML = hrGuts;
 }
