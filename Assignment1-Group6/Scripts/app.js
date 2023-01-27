@@ -1,3 +1,10 @@
+/*
+Name: Conner Tamane (100754614) & Grayson Closs (100597686)
+Date Completed: January 27, 2023,
+Course: WEBD6201
+Description: This is the app.js file for our Web Development Work. It Includes links to all of our pages, including
+and about us page, a services page, and a Contact
+*/
 "use strict";
 
 
@@ -7,8 +14,10 @@
     {
         console.log("App Started")
     }
-    window.addEventListener("load", Start)
-    window.addEventListener("load", IndexPage)
+    window.addEventListener("load", Start);
+    if (document.title === "Home") {IndexPage();}
+    // window.addEventListener("load", IndexPage);
+    window.addEventListener("load", SiteWide);
     if (document.title === "Home") { DisplayPage(); }
 })();
 
@@ -49,7 +58,7 @@ function DisplayPage(){
     });
 
 }
-
+// Function that display contents of index page
 function IndexPage (){
     let mainContent = document.getElementsByTagName("main")[0];
     let indexWelcomeMsg = document.createElement("h1");
@@ -60,8 +69,4 @@ function IndexPage (){
     let bodyText = "This is the home page for Grayson & Conner Inc. Here you can navigate to our Projects, Services, " +
         "About Us, and Contact Us pages. More work coming soon...";
     document.getElementById("bodyTxt").innerText = bodyText;
-
-
-
-
 }
