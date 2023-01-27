@@ -8,22 +8,20 @@
         console.log("App Started")
     }
     window.addEventListener("load", Start)
-    window.addEventListener("load", IndexPage)
     if (document.title === "Home") { DisplayPage(); }
-
 })();
 
 //Function that listens for the click of the About Us button on the index.html page
 function DisplayPage(){
 
-    // let MainContent = document.getElementsByTagName("main")[0];
-    // let MainParagraph = document.createElement("p");
-    // let FirstString = "This is";
-    // let SecondString = `${FirstString} the first javascript variable`;
-    // MainParagraph.setAttribute("id", "MainParagraph");
-    // MainParagraph.setAttribute("class", "mt-3");
-    // MainParagraph.textContent = SecondString;
-    // MainContent.appendChild(MainParagraph);
+    let MainContent = document.getElementsByTagName("main")[0];
+    let MainParagraph = document.createElement("p");
+    let FirstString = "This is";
+    let SecondString = `${FirstString} the first javascript variable`;
+    MainParagraph.setAttribute("id", "MainParagraph");
+    MainParagraph.setAttribute("class", "mt-3");
+    MainParagraph.textContent = SecondString;
+    MainContent.appendChild(MainParagraph);
 
 
     //let Article = document.createElement("article");
@@ -40,7 +38,7 @@ function DisplayPage(){
         location.href = "about.html";
     });
     ProductsBtn.addEventListener("click", function(){
-        location.href = "products.html";
+        location.href = "projects.html";
     });
     ServicesBtn.addEventListener("click", function(){
         location.href = "services.html";
@@ -48,6 +46,8 @@ function DisplayPage(){
     ContactUsBtn.addEventListener("click", function(){
         location.href = "contact.html";
     });
+<<<<<<< Updated upstream
+=======
 }
 
 function IndexPage (){
@@ -57,7 +57,11 @@ function IndexPage (){
     indexWelcomeMsg.textContent = indexWelcomeText;
     mainContent.prepend(indexWelcomeMsg);
 
+    let bodyText = "This is the home page for Grayson & Conner Inc. Here you can navigate to our Projects, Services, " +
+        "About Us, and Contact Us pages. More work coming soon...";
+    document.getElementById("bodyTxt").innerText = bodyText;
 
 
 
+>>>>>>> Stashed changes
 }
