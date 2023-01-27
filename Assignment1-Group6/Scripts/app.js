@@ -55,7 +55,7 @@ function IndexPage (){
     let indexWelcomeMsg = document.createElement("h1");
     let indexWelcomeText = "Welcome to Assignment 1 - Group 6!";
     indexWelcomeMsg.textContent = indexWelcomeText;
-    mainContent.appendChild(indexWelcomeMsg);
+    mainContent.prepend(indexWelcomeMsg);
 
 
 
