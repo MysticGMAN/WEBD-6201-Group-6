@@ -8,20 +8,21 @@
         console.log("App Started")
     }
     window.addEventListener("load", Start)
+    window.addEventListener("load", IndexPage)
     if (document.title === "Home") { DisplayPage(); }
 })();
 
 //Function that listens for the click of the About Us button on the index.html page
 function DisplayPage(){
 
-    let MainContent = document.getElementsByTagName("main")[0];
-    let MainParagraph = document.createElement("p");
-    let FirstString = "This is";
-    let SecondString = `${FirstString} the first javascript variable`;
-    MainParagraph.setAttribute("id", "MainParagraph");
-    MainParagraph.setAttribute("class", "mt-3");
-    MainParagraph.textContent = SecondString;
-    MainContent.appendChild(MainParagraph);
+    // let MainContent = document.getElementsByTagName("main")[0];
+    // let MainParagraph = document.createElement("p");
+    // let FirstString = "This is";
+    // let SecondString = `${FirstString} the first javascript variable`;
+    // MainParagraph.setAttribute("id", "MainParagraph");
+    // MainParagraph.setAttribute("class", "mt-3");
+    // MainParagraph.textContent = SecondString;
+    // MainContent.appendChild(MainParagraph);
 
 
     //let Article = document.createElement("article");
