@@ -46,8 +46,7 @@ function DisplayPage(){
     ContactUsBtn.addEventListener("click", function(){
         location.href = "contact.html";
     });
-<<<<<<< Updated upstream
-=======
+
 }
 
 function IndexPage (){
@@ -63,5 +62,5 @@ function IndexPage (){
 
 
 
->>>>>>> Stashed changes
+
 }
