@@ -131,12 +131,13 @@ function SiteWide (){
 
     let footer = document.getElementsByTagName("main")[0];
     let footerGuts = "<footer class=\"footer mt-auto bg-dark fixed-bottom\">\n" +
-        "  <div class=\"container justify-content-end\">\n" +
-        "    <span id=\"footer\" class=\"text-muted\">© 2023 CG, Inc. All rights reserved.</span>\n" +
+        "  <div class=\"container align-content-right\">\n" +
+        "    <span id=\"footer\" class=\"text-muted\"></span>\n" +
         "  </div>\n" +
         "</footer>";
     footer.insertAdjacentHTML("afterend", footerGuts);
-    let currentDate = new Date().toLocaleDateString();
-    document.getElementById("footer")[0].innerText(currentDate);
+    let currentDate = "© 2023 CG, Inc. All rights reserved. \t" + new Date().toLocaleDateString();
+    let footerDate = document.getElementById("footer");
+    footerDate.innerText = currentDate;
 }
 
