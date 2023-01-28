@@ -1,6 +1,22 @@
 "use strict";
 
+function ContactForm(event){
+    event.preventDefault();
+
+    let form = [document.getElementById("fullName"), document.getElementById("contactNumber"),
+        document.getElementById("emailAddress"), document.getElementById("message")];
+    for(let i = 0; i < form.length; i++) {
+        console.log(form[i].value);
+    }
+    setTimeout(() => { location.href = "index.html"}, 3000);
+
+
+}
+
 class Contact {
+
+
+
     constructor( fullName = "", contactNumber = "", emailAddress = "") {
         this.FullName = fullName;
         this.ContactNumber = contactNumber;
@@ -38,7 +54,7 @@ class Contact {
     }
 
     serialize(){
-        if(this.FullName != "" && this.ContactNumber != "" && this.EmailAddress != ""){
+        if(this.FullName !== "" && this.ContactNumber !== "" && this.EmailAddress !== ""){
             return `${this.FullName}, ${this.ContactNumber}, ${this.EmailAddress}`;
         }
         console.error("One or more of the properties of the Contact object are missing or invalid");

@@ -14,8 +14,12 @@ and about us page, a services page, and a Contact
     {
         console.log("App Started")
     }
+
     window.addEventListener("load", Start);
     if (document.title === "Home") {IndexPage();}
+    if (document.title === "Projects") {ProjectsPage();}
+    if (document.title === "Services") {ServicesPage();}
+    if (document.title === "About") {AboutPage();}
     // window.addEventListener("load", IndexPage);
     window.addEventListener("load", SiteWide);
     if (document.title === "Home") { DisplayPage(); }
@@ -110,7 +114,7 @@ function AboutPage(){
 }
 
 function SiteWide (){
-    console.log("i am here in sitewide");
+
     let background = document.getElementsByTagName("body")[0];
     background.setAttribute("id", "body");
     background.setAttribute("class", "background");
@@ -135,3 +139,4 @@ function SiteWide (){
     let currentDate = new Date().toLocaleDateString();
     document.getElementById("footer")[0].innerText(currentDate);
 }
+
