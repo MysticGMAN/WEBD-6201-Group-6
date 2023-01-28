@@ -1,5 +1,6 @@
 "use strict";
 
+// Function to obtain form data and log it to console
 function ContactForm(event){
     event.preventDefault();
 
@@ -8,6 +9,7 @@ function ContactForm(event){
     for(let i = 0; i < form.length; i++) {
         console.log(form[i].value);
     }
+    // After submit button is clicked, current page will redirect to home page
     setTimeout(() => { location.href = "index.html"}, 3000);
 
 

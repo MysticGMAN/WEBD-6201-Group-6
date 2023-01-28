@@ -59,6 +59,7 @@ function IndexPage (){
     document.getElementById("bodyTxt").innerText = bodyText;
 }
 
+// Function that displays the contents of Project Page
 function ProjectsPage(){
     let welcomeH3 = document.getElementById("projectsH3");
     let projectWelMsg = "Welcome to Projects";
@@ -77,6 +78,7 @@ function ProjectsPage(){
     graysonCol.innerText = gMsg;
 }
 
+// Function that displays the contents of the services page
 function ServicesPage(){
     let welServices = document.getElementById("welServices");
     let paraServices = document.getElementById("servicesPara");
@@ -89,6 +91,7 @@ function ServicesPage(){
     paraServices.innerHTML = servicesMsg;
 }
 
+// Function that displays the contents of the about page
 function AboutPage(){
     let welAbout = document.getElementById("welAbout");
     let gAboot = document.getElementById("graysonColAbout");
@@ -113,6 +116,7 @@ function AboutPage(){
     gAboot.innerText = aboutMsgG;
 }
 
+// Function to display contents for all pages
 function SiteWide (){
 
     let background = document.getElementsByTagName("body")[0];
