@@ -17,7 +17,7 @@
 <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-dragon"></i> WEBD6201</a>
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-dragon fa-spin" style="--fa-animation-duration: 90s;"></i> WEBD6201</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -31,13 +31,13 @@
                         <a class="nav-link" href="products.html"><i class="fa-solid fa-clipboard"></i> Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="services.html"><i class="fa-solid fa-bell-concierge"></i> Services</a>
+                        <a class="nav-link" href="services.html"><i class="fa-solid fa-flask"></i> Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html"><i class="fa-solid fa-circle-info"></i> About us</a>
+                        <a class="nav-link" href="about.html"><i class="fa-solid fa-circle-user"></i> About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="contact.html"><i class="fa-regular fa-address-book"></i> Contact us</a>
+                        <a class="nav-link active" aria-current="page" href="contact.html"><i class="fa-solid fa-phone"></i> Contact us</a>
                     </li>
                 </ul>
             </div>
@@ -50,7 +50,7 @@
 
     <div class="container justify-content-center col-md-6">
 
-        <form >
+        <form name="userContactForm" onsubmit="ContactForm(event)" >
 
             <div class=" input-group mb-3">
                 <span class="input-group-text">Full Name</span>
